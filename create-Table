@@ -1,0 +1,12 @@
+-- Drop table if it exists (so CREATE TABLE always works)
+DROP TABLE IF EXISTS student;
+
+CREATE TABLE student (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50),
+    age INT
+);
+
+INSERT INTO student (name, age) VALUES
+('Anchal', 20),
+('Cookie', 21);
