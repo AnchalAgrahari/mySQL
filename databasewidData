@@ -1,0 +1,6 @@
+-- to check how many database have valus and how many are empty
+
+SELECT TABLE_SCHEMA AS DatabaseName,
+       SUM(TABLE_ROWS) AS TotalRows
+FROM INFORMATION_SCHEMA.TABLES
+GROUP BY TABLE_SCHEMA;
